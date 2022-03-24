@@ -3,6 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Prereq
+
 - [NodeJS](https://nodejs.org/en/)
 - [Firebase](https://www.firebase.google.com/)
 - run `npm install`
