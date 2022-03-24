@@ -3,10 +3,10 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "montirloka",
-  headline: "Unlimited Transactions with zero fees",
+  topLine: "Automotive Solution at the Palm of Your Hand",
+  headline: "Car trouble? We can help",
   description:
-    "Get access to our exclusive app that allows you to send unlimited transactions without getting charged any fees.",
+    "Pioneer of online personal vehicle maintenance platform that provides solutions to automotive problems faced by personal motorcycle users in their daily life in Indonesia.",
   buttonLabel: "Get started",
   imgStart: false,
   img: require("../../img/svg-2.svg"),
