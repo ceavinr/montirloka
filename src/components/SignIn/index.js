@@ -1,25 +1,26 @@
 import React, { useState } from "react";
 import { Container, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text } from "./SigninElements";
 import "./../../firebase";
-import firebase from "firebase/compat/app";
-
+// import firebase from "firebase/compat/app";
 import { getDatabase, ref, set } from "firebase/database";
 
 const db = getDatabase();
 
 const SignIn = () => {
-  const firebaseApp = firebase.apps[0];
-  console.log("firebaseApp.options");
-  console.log(firebaseApp.options);
+  // console.log("process.env.REACT_APP_TESTING");
+  // console.log(process.env.REACT_APP_TESTING);
+  // const firebaseApp = firebase.apps[0];
+  // console.log("firebaseApp.options");
+  // console.log(firebaseApp.options);
 
-  const [email, setEmail] = useState("asdf@gmail.com");
-  const [password, setPassword] = useState("asdf");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const handleSubmit = async (e) => {
     //add data to firebase
     e.preventDefault();
-    console.log("email, password");
+    // console.log("email, password");
 
-    console.log(email, password);
+    // console.log(email, password);
     const newUser = {
       email,
       password,
@@ -27,7 +28,8 @@ const SignIn = () => {
 
     console.log("newUser");
     console.log(newUser);
-    set(ref(db, "users/1"), newUser);
+    set(ref(db, "users/10"), newUser);
+    console.log("Harusnya sudah masuk");
   };
 
   return (
@@ -58,7 +60,7 @@ const SignIn = () => {
               ></FormInput>
               <FormButton type="submit">Next</FormButton>
               <Text>Forgot password</Text>
-              <Text>Make an account</Text>
+              <Text>Already have account?</Text>
             </Form>
           </FormContent>
         </FormWrap>
