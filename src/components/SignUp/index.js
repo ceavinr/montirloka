@@ -10,9 +10,9 @@ import {
   FormInput,
   FormButton,
   Text,
-} from "./SigninElements";
+} from "./SignUpElements";
 
-const SignIn = () => {
+const SignUp = () => {
   return (
     <>
       <Container>
@@ -20,14 +20,15 @@ const SignIn = () => {
           <Icon to="/"></Icon>
           <FormContent>
             <Form action="#">
-              <FormH1>Sign In</FormH1>
+              <FormH1>Sign Up</FormH1>
+              <FormLabel htmlFor="for">Username</FormLabel>
+              <FormInput type="username" required></FormInput>
               <FormLabel htmlFor="for">Email</FormLabel>
               <FormInput type="email" required></FormInput>
               <FormLabel htmlFor="for">Password</FormLabel>
               <FormInput type="password" required></FormInput>
               <FormButton type="submit">Next</FormButton>
-              <Text>Forgot password</Text>
-              <Text>Make an account</Text>
+              <Text>Already have account?</Text>
             </Form>
           </FormContent>
         </FormWrap>
@@ -36,4 +37,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn;
+export default SignUp;
